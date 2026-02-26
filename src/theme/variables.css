@@ -1,0 +1,48 @@
+/* ============================================================
+   variables.css — Tema personalizado: modo oscuro + naranja baloncesto
+   Training Planner AI
+============================================================ */
+
+:root {
+  /* Paleta: Naranja baloncesto + oscuro */
+  --ion-color-primary: #f06000;
+  --ion-color-primary-rgb: 240, 96, 0;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-shade: #d35500;
+  --ion-color-primary-tint: #ff7a1a;
+
+  --ion-color-warning: #ffd534;
+  --ion-color-success: #2dd36f;
+  --ion-color-danger: #eb445a;
+
+  /* Fondo general ligeramente grisáceo */
+  --ion-background-color: #f4f5f8;
+  --ion-text-color: #1a1a2e;
+
+  /* Tab bar */
+  --ion-tab-bar-background: #0d0d0d;
+  --ion-tab-bar-color: #888;
+  --ion-tab-bar-color-selected: #ffd534;
+}
+
+/* Modo oscuro opcional */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ion-background-color: #121212;
+    --ion-text-color: #f0f0f0;
+    --ion-card-background: #1e1e1e;
+    --ion-item-background: #1e1e1e;
+    --ion-toolbar-background: #0d0d0d;
+  }
+}
+
+/* Fuente general levemente mejorada */
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Estilos del acordeón */
+ion-accordion-group ion-accordion ion-item[slot="header"] {
+  --border-radius: 8px;
+  margin-bottom: 4px;
+}
